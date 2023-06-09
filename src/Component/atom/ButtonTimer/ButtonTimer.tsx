@@ -6,12 +6,13 @@ export type ButtonTimerProps = {
     label: string,
     backgroundColor?: string
     color?: string
+    onClic: () => void;
     style?: React.CSSProperties
 }
 
-export const ButtonTimer: React.FC<ButtonTimerProps> = ({ backgroundColor, color, label, style }) => {
+export const ButtonTimer: React.FC<ButtonTimerProps> = ({ backgroundColor, color, label, style, onClic }) => {
     return (
-        <button className={styles.ButtonTimer} style={{ backgroundColor, color, ...style }}>
+        <button onClick={onClic} className={styles.ButtonTimer} style={{ backgroundColor, color, ...style }}>
             {label}
         </button>
     )
