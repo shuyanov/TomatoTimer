@@ -5,7 +5,7 @@ type FlexContainerProps = {
     flexDirection?: 'column' | 'row'
     alignItems?: string
     gap?: number
-    width?: number
+    width?: number | '100%'
     height?: number | string
     justifyContent?: string
     position?: 'absolute' | 'relative' | 'fixed' | 'sticky'

@@ -9,8 +9,10 @@ const Header = ({ children }: PropsWithChildren<object>) => {
             justifyContent="center"
             alignItems="center"
             height={100}
+            width={'100%'}
             top={0}
             zIndex={'auto'}
+            style={{ backgroundColor: '#C25957' }}
         >
             {children}
         </FlexContainer>
@@ -33,6 +35,7 @@ const Footer = ({ children }: PropsWithChildren<object>) => {
             position="sticky"
             alignItems="center"
             justifyContent="center"
+            style={{ backgroundColor: '#5C2A29' }}
         >
             {children}
         </FlexContainer>

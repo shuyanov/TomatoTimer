@@ -1,0 +1,20 @@
+.ButtonTimer {
+    background-color: #5C2A29;
+    color: white;
+    cursor: pointer;
+
+    width: 100px;
+    height: 35px;
+
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.ButtonTimer:hover {
+    background-color: #0000007d;
+}
+
+.ButtonTimer:active {
+    background-color: rgba(0, 0, 0, 0.743);
+}
